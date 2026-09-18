@@ -3,79 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ledger Lane - Download</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
+            margin: 0;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
         }
 
-        .card {
-            background: white;
+        .container {
             width: 90%;
-            max-width: 420px;
+            max-width: 430px;
+            background: white;
             padding: 40px 25px;
-            text-align: center;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 22px;
+            background: #111;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
         }
 
         h1 {
-            margin-bottom: 10px;
+            margin: 20px 0 8px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 8px;
         }
 
         .version {
-            color: #777;
+            color: #888;
+            font-size: 14px;
             margin-bottom: 30px;
         }
 
-        .download {
-            display: inline-block;
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
             background: #111;
             color: white;
-            padding: 15px 30px;
-            border-radius: 10px;
             text-decoration: none;
+            border-radius: 12px;
             font-size: 18px;
             font-weight: bold;
         }
 
-        .download:hover {
+        .download-btn:hover {
             opacity: 0.85;
         }
 
-        .note {
+        .info {
             margin-top: 25px;
             font-size: 13px;
             color: #777;
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="card">
+    <div class="container">
+
+        <div class="logo">💰</div>
 
         <h1>Ledger Lane</h1>
 
-        <p>Simple Daily Expense Tracker</p>
+        <div class="subtitle">
+            Simple Daily Expense Tracker
+        </div>
 
-        <p class="version">Android Version 1.0.0</p>
+        <div class="version">
+            Android Version 1.0.0
+        </div>
 
-        <a class="download"
+        <a class="download-btn"
            href="https://github.com/riyalhassan/ledger-lane/releases/download/v1.0.0/ledger-lane-v1.0.0.apk">
             📱 Download APK
         </a>
 
-        <p class="note">
-            Android users can download and install the APK directly.
-        </p>
+        <div class="info">
+            Download Ledger Lane for Android.<br>
+            After downloading, open the APK and install the app.
+        </div>
 
     </div>
 
